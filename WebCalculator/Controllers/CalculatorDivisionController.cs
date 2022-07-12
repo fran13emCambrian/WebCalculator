@@ -14,9 +14,10 @@ namespace WebCalculator.Controllers
     public class CalculatorDivisionController : ControllerBase
     {
         //Takes numbers for the division
-       public double Division([FromQuery] double num1, [FromQuery] double num2)
-       {
-      return Class1.Division(num1, num2);
-        }
+        [HttpGet]
+         public double Division([FromQuery] double num1, [FromQuery] double num2)
+          {
+        return Class1.Division(num1, num2);
+          }
     }
 }
